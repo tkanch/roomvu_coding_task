@@ -1,0 +1,300 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:#f3f7ff;
+}
+
+h1 {
+  font-size:1.3rem;
+   margin-top:70px;
+   margin-left:5%;
+   
+}
+main {
+  width:90%;
+  margin:20px auto;
+  display:flex;
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+
+
+/* style for form component */
+section.form {
+  border-radius:20px 0px 0px 20px;
+  color:#6b6b6b;
+  padding:35px;
+  width:40%;
+  background-color:#ffffff;
+}
+
+h2 {
+  font-size:0.9rem;
+  margin-bottom:20px;
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+
+}
+input {
+  border:none;
+  outline:none;
+  padding:10px;
+  border-radius:10px;
+  border:solid 1px #6b6b6b;
+  margin:5px 0px 20px 0px;
+  text-transform:capitalize;
+}
+button {
+  align-items: center;
+  font-weight: 700;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 15px;
+  background-color: #2979ff;
+  color: #fff;
+  cursor: pointer;
+  transition:0.3s all;
+  border:none;
+  margin-top:20px;
+}
+
+button:hover {
+  border:solid 2px #2979ff;
+  background-color:#0049c2;
+}
+span {
+  margin-left:10px;
+}
+small {
+  text-align:center;
+  display:block;
+  margin-top:7px;
+}
+
+/* style for video component */
+section.video {
+  position:relative;
+  width:60%;
+  border-radius:0px 20px 20px 0px;
+  padding:0px;
+  padding:35px;
+}
+
+video {
+  border-radius:20px 20px 20px 20px;
+}
+
+
+
+
+/* styles for overlay 1 */
+div#overlay1 {
+  position:absolute;
+  top:72px;
+  left:55px;
+  background-color:rgba(11,95,155,0.9);
+  width:120px;
+  height:200px;
+  padding:20px;
+  color:white;
+  display:none;
+  transition:1s all ease;
+  border-radius:0px 0px 30% 30%;
+  
+}
+
+#overlay1 div.photo {
+  width:120px;
+  height:100px;
+  position:relative;
+  left:-20px;
+  top:-20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#overlay1 img {
+  width:80%;
+  height:80%;
+  border-radius:10px;
+}
+
+#overlay1 div.info1 {
+  width:150%;
+  height:20%;
+  transform:scaleX(1.1);
+  background-color:rgba(11,95,155,0.9);
+  position:relative;
+  left:-20px;
+  top:-20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  }
+
+p {
+  font-size:0.8rem;
+  text-transform: capitalize;
+  color:#fff;
+  margin-bottom:5px;
+  text-align:center;
+}
+
+p.brk-name {
+margin-top:10px;
+font-size:0.6rem;
+}
+
+/* stye for overlay 2*/
+div#overlay2 {
+  position:absolute;
+  bottom:50px;
+  left:90px;
+  background-color:rgba(11,95,155,0.9);
+  width:200px;
+  height:50px;
+  padding:20px;
+  display:none;
+  transition:0.3s all ease;
+  border-radius:10px;
+  font-size:20px;
+}
+
+#overlay2 div.photo {
+  width:50px;
+  height:50px;
+  border-radius:10px;
+  transform:rotate(320deg);
+  background-color:grey;
+  position:relative;
+  top:-22px;
+  left:-40px;
+  background-color:#e4e6e7;
+  display:flex;
+  
+}
+
+#overlay2 img {
+  width:100%;
+  height:100%;
+  border-radius:10px;
+  transform:rotate(-320deg);
+  border-radius:100%;
+  padding:5px;
+  object-fit:cover;
+ 
+}
+
+
+
+#overlay2 .info {
+position:relative;
+left:0px;
+top:-60px;
+text-align:right;
+}
+
+
+/* styles for overlay 3 */
+div#overlay3 {
+  position:absolute;
+  top:72px;
+  left:220px;
+  background-color:rgba(11,95,155,0.9);
+  width:120px;
+  height:200px;
+  padding:20px;
+  color:white;
+  display:none;
+  transition:1s all ease;
+  border-radius:0px 0px 30% 30%;
+  
+}
+
+#overlay3 div.photo {
+  width:120px;
+  height:100px;
+  position:relative;
+  left:-20px;
+  top:-20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#overlay3 img {
+  width:80%;
+  height:80%;
+  border-radius:10px;
+  
+}
+
+#overlay3 div.info1 {
+  width:120px;
+  height:30px;
+  transform:scaleX(1.1);
+  background-color:rgba(11,95,155,0.9);
+  position:relative;
+  left:-20px;
+  top:-20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+
+/* media query for small  devices */
+@media screen and (max-width:800px) {
+  main {
+    width:95%;
+    flex-direction:column;
+  }
+
+  section.form {
+    width:100%;
+    order:2;
+    border-radius:0px;
+  }
+
+  section.video {
+    width:100%;
+  }
+
+ div#overlay1 {
+   transform: scale(0.6);
+   top:33px;
+   
+ }
+div#overlay2 {
+  transform:scale(0.6);
+  left:12px;
+  bottom:35px;
+}
+
+div#overlay3 {
+  transform: scale(0.6);
+  top:33px;
+  left:180px;
+}
+ 
+}
+
+
+
+
+
+
+
+
+
