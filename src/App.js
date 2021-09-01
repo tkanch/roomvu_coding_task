@@ -47,7 +47,7 @@ function App() {
   setTimeout(function(){
     document.querySelector('#overlay2').style.opacity = "0"; 
     document.querySelector('#overlay3').style.display = "block"; 
-    }, 9000);
+    }, 90000);
     }
 
 
