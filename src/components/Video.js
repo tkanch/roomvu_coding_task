@@ -5,7 +5,7 @@ const Video = ({data,dispOverlay}) => {
     //defining source 
     const source="https://static.roomvu.com//storage/market_update/videos/to-monthly-update_video.mp4";
   
-      
+   
     
     return (
         <section className="video">

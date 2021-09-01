@@ -1,6 +1,6 @@
 
 import './App.css';
-import { useState } from 'react';
+import { useState } from 'react'; //using state hook
 import Form from './components/Form';
 import Video from './components/Video';
 
@@ -32,7 +32,7 @@ function App() {
    }
 
    
-  //defining myFunc function
+  //defining dispOverlay function which will get called when the input field is changed
   const dispOverlay=()=>{
     
     setTimeout(function(){
@@ -44,11 +44,11 @@ function App() {
     document.querySelector('#overlay2').style.display = "block";
     }, 8000);
 
- setTimeout(function(){
-  document.querySelector('#overlay2').style.opacity = "0"; 
-  document.querySelector('#overlay3').style.display = "block"; 
-  }, 20000);
-  }
+  setTimeout(function(){
+    document.querySelector('#overlay2').style.opacity = "0"; 
+    document.querySelector('#overlay3').style.display = "block"; 
+    }, 9000);
+    }
 
 
   
@@ -56,7 +56,7 @@ function App() {
     <>
     <h1>Branded Real Estate Videos for Real Estate Agents</h1>
     <main>
-        <Form data={data}  inputEvent={inputEvent}/>
+        <Form inputEvent={inputEvent}/>
         <Video data={data} dispOverlay={dispOverlay} />
     </main>
 

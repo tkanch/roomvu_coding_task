@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Form = ({data,inputEvent}) => {
+const Form = ({inputEvent}) => {
     return (
         <section className="form">
             <h2>Get the latest real estate video with YOUR branding</h2>
@@ -10,16 +10,14 @@ const Form = ({data,inputEvent}) => {
                 type="text"  
                 id="full-name" 
                 name="fullname" 
-                value=""
                 onChange={inputEvent}
                 placeholder="Your Name Here"
                  />
                 <label htmlFor="ph-num">Phone Number</label>
                 <input 
-                type="text"  
+                type="tel"  
                 id="ph-num" 
                 name="phnum" 
-                value=""
                 onChange={inputEvent}
                 placeholder="555 5555 555"
                 />
@@ -28,7 +26,6 @@ const Form = ({data,inputEvent}) => {
                 type="text" 
                 id="brok-name" 
                 name="brkname" 
-                value=""
                 onChange={inputEvent}
                 placeholder="Your Realty Here"
                 />
