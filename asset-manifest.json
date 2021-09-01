@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/roomvu_task_deployed/static/css/main.d40e42d0.chunk.css",
+    "main.js": "/roomvu_task_deployed/static/js/main.b76ddd7c.chunk.js",
+    "main.js.map": "/roomvu_task_deployed/static/js/main.b76ddd7c.chunk.js.map",
+    "runtime-main.js": "/roomvu_task_deployed/static/js/runtime-main.1489453f.js",
+    "runtime-main.js.map": "/roomvu_task_deployed/static/js/runtime-main.1489453f.js.map",
+    "static/js/2.7fb11035.chunk.js": "/roomvu_task_deployed/static/js/2.7fb11035.chunk.js",
+    "static/js/2.7fb11035.chunk.js.map": "/roomvu_task_deployed/static/js/2.7fb11035.chunk.js.map",
+    "index.html": "/roomvu_task_deployed/index.html",
+    "static/css/main.d40e42d0.chunk.css.map": "/roomvu_task_deployed/static/css/main.d40e42d0.chunk.css.map",
+    "static/js/2.7fb11035.chunk.js.LICENSE.txt": "/roomvu_task_deployed/static/js/2.7fb11035.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1489453f.js",
+    "static/js/2.7fb11035.chunk.js",
+    "static/css/main.d40e42d0.chunk.css",
+    "static/js/main.b76ddd7c.chunk.js"
+  ]
+}
